@@ -3,6 +3,8 @@ import smtplib
 import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from flask import Flask, render_template, request
+
 
 def get_weather(city, api_key):
     """Fetches weather data for a given city using the OpenWeatherMap API."""
@@ -136,3 +138,4 @@ if weather_data:
     send_weather_email(to_email, city_name, weather_data)
 else:
     print("Unable to fetch weather data. Email not sent.")
+

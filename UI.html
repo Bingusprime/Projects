@@ -1,0 +1,17 @@
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':  
+
+        city = request.form['city']
+        email = request.form['email']
+        # Fetch weather data and process it
+        return render_template('results.html', city=city, weather_data=weather_data, camera_settings=camera_settings)
+    else:
+        return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
