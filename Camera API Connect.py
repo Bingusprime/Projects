@@ -10,7 +10,7 @@ ffi.cdef("""
 """)
 
 # Load the library
-edsdk_lib = ffi.dlopen("C:\Users\mattb\AppData\Local\Temp\8087785f-da7f-413d-abf9-7b6e048f8823_EDSDK-2.9.zip.823\EDSDK 2.9 Windows\EDSDK\Library\EDSDK.lib")
+edsdk_lib = ffi.dlopen
 
 # Call the function
 result = edsdk_lib.EdsInitializeSDK()
