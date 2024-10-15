@@ -24,7 +24,7 @@ OPENWEATHERMAP_API_KEY: Your OpenWeatherMap API key.
 EMAIL_ADDRESS: Your email address.
 EMAIL_PASSWORD: Your email password.
 
-Enter city and recipient email:
+Enter city and recipient emai:
 
 You'll be prompted to enter the city name and the email address to send the information to.
 Receive email:
